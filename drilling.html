@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бурение скважин — Сатурит</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<nav id="mainNav" class="nav-solid"><a href="index.html" class="nav-logo">Сату<span>рит</span></a>
+  <ul class="nav-links"><li><a href="index.html">Главная</a></li><li><a href="drilling.html" class="active">Бурение</a></li><li><a href="equipment.html">Обустройство</a></li><li><a href="filtration.html">Фильтрация</a></li><li><a href="septic.html">Септик</a></li><li><a href="map.html" class="nav-map-link">🗺 Карта глубин</a></li><li><a href="contact.html" class="nav-cta">Заказать</a></li></ul>
+  <div class="nav-burger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div></nav>
+<div id="mobileMenu" class="mobile-menu"><button class="mobile-close" onclick="closeMobileMenu()">✕</button><ul><li><a href="index.html" onclick="closeMobileMenu()">Главная</a></li><li><a href="drilling.html" onclick="closeMobileMenu()">Бурение</a></li><li><a href="equipment.html" onclick="closeMobileMenu()">Обустройство</a></li><li><a href="filtration.html" onclick="closeMobileMenu()">Фильтрация</a></li><li><a href="septic.html" onclick="closeMobileMenu()">Септик</a></li><li><a href="map.html" onclick="closeMobileMenu()" class="mobile-map-link">🗺 Карта глубин</a></li><li><a href="contact.html" onclick="closeMobileMenu()" class="mobile-cta">Заказать</a></li></ul></div>
+
+<div class="page-hero-small">
+  <div class="container">
+    <span class="section-label">Артезианские скважины</span>
+    <h1>Бурение скважин</h1>
+    <p>Минимальная стоимость объекта — от 145 000 руб. · Гарантия 5 лет · Оплата после воды</p>
+  </div>
+</div>
+
+<section class="section-page">
+  <div class="container">
+
+    <div class="price-banner reveal">
+      <div class="price-item highlight">
+        <div class="price-label">УРБ 2А2 (ЗИЛ)</div>
+        <div class="price-val">3 200 <span>₽/м</span></div>
+        <div class="price-note">+ стоимость обсадных колонн</div>
+      </div>
+      <div class="price-item">
+        <div class="price-label">УДВ 70 (МГБУ)</div>
+        <div class="price-val">3 500 <span>₽/м</span></div>
+        <div class="price-note">+ стоимость обсадных колонн</div>
+      </div>
+      <div class="price-item">
+        <div class="price-label">Минимальный объект</div>
+        <div class="price-val">145 000 <span>₽</span></div>
+        <div class="price-note">комплексно «под ключ»</div>
+      </div>
+    </div>
+
+    <div class="detail-grid reveal" style="margin-top:3rem;">
+      <div class="detail-card">
+        <img src="img/img_urb_zil.jpg" alt="УРБ 2А2" class="detail-img">
+        <div class="detail-body">
+          <div class="detail-badge">Глубокие скважины · Сложная геология</div>
+          <h2>УРБ 2А2</h2>
+          <p class="detail-desc">Буровая установка на базе ЗИЛ. Большая мощность и универсальность, автономность, возможность бурить глубокие скважины в условиях сложной геологии.</p>
+          <ul class="detail-specs">
+            <li><span>Ширина</span><strong>2 400 мм</strong></li>
+            <li><span>Длина</span><strong>8 000 мм</strong></li>
+            <li><span>Высота</span><strong>3 800 мм</strong></li>
+            <li><span>Стоимость</span><strong>3 200 ₽/м</strong></li>
+          </ul>
+        </div>
+      </div>
+      <div class="detail-card">
+        <div class="detail-img-icon">
+          <span style="font-size:5rem;">🔩</span>
+          <p style="color:var(--gray); margin-top:1rem; font-family:Unbounded; font-size:1.2rem;">УДВ 70</p>
+        </div>
+        <div class="detail-body">
+          <div class="detail-badge detail-badge-alt">Труднодоступные участки</div>
+          <h2>УДВ 70</h2>
+          <p class="detail-desc">Малогабаритная буровая установка (МГБУ). Применяется для бурения скважин на участках, где невозможно проехать трёхосному грузовому автомобилю с установкой УРБ 2А2.</p>
+          <ul class="detail-specs">
+            <li><span>Ширина</span><strong>1 100 мм</strong></li>
+            <li><span>Длина</span><strong>2 400 мм</strong></li>
+            <li><span>Высота</span><strong>1 850 мм</strong></li>
+            <li><span>Стоимость</span><strong>3 500 ₽/м</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="casing-section reveal">
+      <span class="section-label">Конструкция скважины</span>
+      <h2>Обсадные колонны</h2>
+      <p class="section-intro">Тип конструкции определяется индивидуально по геологическому разрезу вашего участка. Стоимость рассчитывается отдельно.</p>
+      <div class="casing-grid">
+        <div class="casing-card">
+          <div class="casing-icon">🔩</div>
+          <h3>Металл + Пластик</h3>
+          <div class="casing-specs">
+            <p>Внешняя труба: металл Ø133×4,5 мм</p>
+            <p>Внутренняя труба: ПНД Ø117×6,8 мм</p>
+          </div>
+          <p class="casing-desc">Классическая конструкция. Стальная обсадка обеспечивает прочность верхней части, ПНД труба — долговечность в водоносном горизонте без коррозии.</p>
+        </div>
+        <div class="casing-card">
+          <div class="casing-icon">⚪</div>
+          <h3>Пластик + Пластик</h3>
+          <div class="casing-specs">
+            <p>Внешняя труба: ПНД Ø125×9 мм</p>
+            <p>Внутренняя труба: нПВХ Ø90×4 мм</p>
+          </div>
+          <p class="casing-desc">Полностью пластиковая конструкция. Не подвержена коррозии, экономичнее металла. Рекомендуется при благоприятной геологии.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:4rem;">
+      <span class="section-label">Этапы работ</span>
+      <h2>Как проходит бурение</h2>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-num">1</div><div class="tl-body"><h3>Первичная оценка</h3><p>Консультация по телефону, расчёт стоимости по карте глубин. Выбор типа установки и конструкции обсадных колонн.</p></div></div>
+        <div class="tl-item"><div class="tl-num">2</div><div class="tl-body"><h3>Выезд специалиста</h3><p>Геолог осматривает участок, определяет точку бурения, подтверждает смету. Земляные работы — 3 000 руб./м³.</p></div></div>
+        <div class="tl-item"><div class="tl-num">3</div><div class="tl-body"><h3>Основные работы</h3><p>Бурение 1–2 рабочих дня. Монтаж обсадных колонн, прокачка скважины до получения чистой воды.</p></div></div>
+        <div class="tl-item"><div class="tl-num">4</div><div class="tl-body"><h3>Готовая скважина</h3><p>Химический анализ воды в лаборатории. Передача документации. Оплата — только после результата.</p></div></div>
+      </div>
+    </div>
+
+    <div class="cta-block reveal">
+      <h2>Рассчитайте стоимость онлайн</h2>
+      <p>Используйте карту глубин — система определит водоносный горизонт в вашем районе и рассчитает смету автоматически.</p>
+      <div class="cta-actions">
+        <a href="map.html" class="btn-map-big"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Карта глубин</a>
+        <a href="contact.html" class="btn-primary">Заказать бурение →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo">Сату<span>рит</span></div><p>Бурение артезианских скважин под ключ.</p></div><div class="footer-nav"><h4>Услуги</h4><ul><li><a href="drilling.html">Бурение скважин</a></li><li><a href="equipment.html">Обустройство</a></li><li><a href="filtration.html">Фильтрация воды</a></li><li><a href="septic.html">Септик</a></li><li><a href="map.html">Карта глубин</a></li></ul></div><div class="footer-contacts"><h4>Контакты</h4><p><a href="tel:+79037258536">+7 (903) 725-85-36</a></p><p><a href="tel:+79160539197">+7 (916) 053-91-97</a></p></div></div><div class="footer-bottom"><span>© 2025 Сатурит.</span></div></div></footer>
+<div class="floating-cta"><a href="https://yandex.com/maps/-/CPaY7Ami" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Яндекс карты</a></div>
+<script src="main.js"></script>
+</body></html>

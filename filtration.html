@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фильтрация воды — Сатурит</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<nav id="mainNav" class="nav-solid"><a href="index.html" class="nav-logo">Сату<span>рит</span></a>
+  <ul class="nav-links"><li><a href="index.html">Главная</a></li><li><a href="drilling.html">Бурение</a></li><li><a href="equipment.html">Обустройство</a></li><li><a href="filtration.html" class="active">Фильтрация</a></li><li><a href="septic.html">Септик</a></li><li><a href="map.html" class="nav-map-link">🗺 Карта глубин</a></li><li><a href="contact.html" class="nav-cta">Заказать</a></li></ul>
+  <div class="nav-burger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div></nav>
+<div id="mobileMenu" class="mobile-menu"><button class="mobile-close" onclick="closeMobileMenu()">✕</button><ul><li><a href="index.html" onclick="closeMobileMenu()">Главная</a></li><li><a href="drilling.html" onclick="closeMobileMenu()">Бурение</a></li><li><a href="equipment.html" onclick="closeMobileMenu()">Обустройство</a></li><li><a href="filtration.html" onclick="closeMobileMenu()">Фильтрация</a></li><li><a href="septic.html" onclick="closeMobileMenu()">Септик</a></li><li><a href="map.html" onclick="closeMobileMenu()" class="mobile-map-link">🗺 Карта глубин</a></li><li><a href="contact.html" onclick="closeMobileMenu()" class="mobile-cta">Заказать</a></li></ul></div>
+
+<div class="page-hero-small">
+  <div class="container">
+    <span class="section-label">Чистая вода в доме</span>
+    <h1>Фильтрация воды</h1>
+    <p>Подбор системы строго индивидуально — по результатам химического анализа вашей скважины</p>
+  </div>
+</div>
+
+<section class="section-page">
+  <div class="container">
+
+    <div class="price-banner reveal">
+      <div class="price-item highlight">
+        <div class="price-label">Система очистки 1.5 м³/ч</div>
+        <div class="price-val">97 000 <span>₽</span></div>
+        <div class="price-note">оборудование + работа. 4 крана одновременно</div>
+      </div>
+      <div class="price-item">
+        <div class="price-label">Химический анализ воды</div>
+        <div class="price-val">от 8 000 <span>₽</span></div>
+        <div class="price-note">необходим для подбора системы</div>
+      </div>
+      <div class="price-item">
+        <div class="price-label">Обслуживание системы</div>
+        <div class="price-val">от 7 000 <span>₽</span></div>
+        <div class="price-note">регулярное ТО</div>
+      </div>
+    </div>
+
+    <div class="filter-layout reveal">
+      <div class="filter-main-img">
+        <img src="img/img_filtration.jpg" alt="Система фильтрации" style="width:100%; max-width:460px; border-radius:16px; background:var(--dark-mid);">
+        <img src="img/img_filter2.jpg" alt="Картриджный фильтр" style="width:100%; max-width:460px; border-radius:16px; margin-top:1rem; background:var(--dark-mid);">
+      </div>
+      <div class="filter-info">
+        <h2>Как работает система очистки</h2>
+        <p style="color:var(--gray); margin-bottom:2rem;">Подбираем и монтируем системы фильтрации на основе многокомпонентной ионообменной смолы, которая убирает железо и жёсткость.</p>
+
+        <div class="filter-steps">
+          <div class="filter-step">
+            <div class="fstep-icon">1</div>
+            <div class="fstep-body">
+              <h3>Химический анализ</h3>
+              <p>Берём пробу воды из скважины и отправляем в лабораторию. Результат — основа для подбора системы. Подбор без анализа невозможен.</p>
+            </div>
+          </div>
+          <div class="filter-step">
+            <div class="fstep-icon">2</div>
+            <div class="fstep-body">
+              <h3>Многокомпонентная ионообменная загрузка</h3>
+              <p>Создана для комплексного решения задач водоподготовки. Эффективно удаляет ионы железа, марганца и соли жёсткости одновременно.</p>
+            </div>
+          </div>
+          <div class="filter-step">
+            <div class="fstep-icon">3</div>
+            <div class="fstep-body">
+              <h3>Картриджи механической очистки</h3>
+              <p>Серия ЭФГ — для удаления взвешенных частиц из воды. Устанавливаются в связке с основной системой.</p>
+            </div>
+          </div>
+          <div class="filter-step">
+            <div class="fstep-icon">4</div>
+            <div class="fstep-body">
+              <h3>Обслуживание и ТО</h3>
+              <p>Регулярная проверка и обновление засыпки, замена картриджей. Продлевает срок службы системы и поддерживает качество воды.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-note-block reveal">
+      <div class="fnb-icon">💡</div>
+      <div>
+        <h3>Индивидуальный подбор — обязателен</h3>
+        <p>Состав воды в каждой скважине уникален. Система фильтрации подбирается строго по результатам химического анализа вашей воды. Универсальных решений нет — мы подбираем именно то, что нужно вам.</p>
+      </div>
+    </div>
+
+    <div class="cta-block reveal">
+      <h2>Заказать анализ воды и систему фильтрации</h2>
+      <p>Свяжитесь с нами — выедем на объект, возьмём пробу и подберём оптимальное решение.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn-primary">Заказать анализ воды →</a>
+        <a href="map.html" class="btn-map"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Карта глубин</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo">Сату<span>рит</span></div><p>Бурение артезианских скважин под ключ.</p></div><div class="footer-nav"><h4>Услуги</h4><ul><li><a href="drilling.html">Бурение скважин</a></li><li><a href="equipment.html">Обустройство</a></li><li><a href="filtration.html">Фильтрация воды</a></li><li><a href="septic.html">Септик</a></li><li><a href="map.html">Карта глубин</a></li></ul></div><div class="footer-contacts"><h4>Контакты</h4><p><a href="tel:+79037258536">+7 (903) 725-85-36</a></p><p><a href="tel:+79160539197">+7 (916) 053-91-97</a></p></div></div><div class="footer-bottom"><span>© 2025 Сатурит.</span></div></div></footer>
+<div class="floating-cta"><a href="https://yandex.com/maps/-/CPaY7Ami" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Яндекс карты</a></div>
+<script src="main.js"></script>
+</body></html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сатурит — Бурение скважин под ключ в Московской области</title>
+<meta name="description" content="Бурение артезианских скважин под ключ. 18 лет опыта, гарантия 5 лет, оплата после воды.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">Сату<span>рит</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Главная</a></li>
+    <li><a href="drilling.html">Бурение</a></li>
+    <li><a href="equipment.html">Обустройство</a></li>
+    <li><a href="filtration.html">Фильтрация</a></li>
+    <li><a href="septic.html">Септик</a></li>
+    <li><a href="map.html" class="nav-map-link">🗺 Карта глубин</a></li>
+    <li><a href="contact.html" class="nav-cta">Заказать</a></li>
+  </ul>
+  <div class="nav-burger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div id="mobileMenu" class="mobile-menu">
+  <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+  <ul>
+    <li><a href="index.html" onclick="closeMobileMenu()">Главная</a></li>
+    <li><a href="drilling.html" onclick="closeMobileMenu()">Бурение</a></li>
+    <li><a href="equipment.html" onclick="closeMobileMenu()">Обустройство</a></li>
+    <li><a href="filtration.html" onclick="closeMobileMenu()">Фильтрация</a></li>
+    <li><a href="septic.html" onclick="closeMobileMenu()">Септик</a></li>
+    <li><a href="map.html" onclick="closeMobileMenu()" class="mobile-map-link">🗺 Карта глубин</a></li>
+    <li><a href="contact.html" onclick="closeMobileMenu()" class="mobile-cta">Заказать</a></li>
+  </ul>
+</div>
+
+<!-- HERO — VIDEO BACKGROUND (плавный, без глюков) -->
+<header id="hero">
+  <div class="hero-video-bg">
+    <video class="hero-vid" autoplay muted loop playsinline preload="auto">
+      <source src="hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span>Московская и Калужская области</div>
+    <h1>Бурение<br>скважин<br><em>под ключ</em></h1>
+    <p class="hero-sub">18 лет опыта · Гарантия 5 лет · Оплата после воды</p>
+    <div class="hero-rating">
+      <iframe src="https://yandex.ru/sprav/widget/rating-badge/232381168783?type=rating&theme=white" width="150" height="50" frameborder="0" scrolling="no"></iframe>
+    </div>
+    <div class="hero-actions">
+      <a href="contact.html" class="btn-primary">Получить расчёт</a>
+      <a href="map.html" class="btn-map">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Карта глубин
+      </a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-card"><div class="stat-num count-up" data-target="18">0</div><div class="stat-label">лет на рынке</div></div>
+    <div class="stat-card"><div class="stat-num count-up" data-target="2400">0</div><div class="stat-label">скважин пробурено</div></div>
+    <div class="stat-card"><div class="stat-num">5 лет</div><div class="stat-label">гарантия</div></div>
+    <div class="stat-card"><div class="stat-num">100%</div><div class="stat-label">оплата после воды</div></div>
+  </div>
+  <div class="scroll-indicator"><div class="scroll-line"></div></div>
+</header>
+
+<!-- ══ КАРТА — ПЕРВЫЙ БЛОК ══ -->
+<section class="section-map-top">
+  <div class="container">
+    <div class="map-cta-card reveal">
+      <div class="map-cta-content">
+        <span class="section-label">Онлайн-калькулятор</span>
+        <h2>Узнайте стоимость<br>за 2 минуты</h2>
+        <p>Найдите свой участок на карте — система рассчитает стоимость бурения с учётом глубины водоносного горизонта именно в вашем районе.</p>
+        <a href="map.html" class="btn-map-big">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Открыть карту глубин
+        </a>
+      </div>
+      <div class="map-cta-visual">
+        <div class="map-preview-circles">
+          <div class="circle c1"></div><div class="circle c2"></div><div class="circle c3"></div>
+          <div class="map-pin">📍</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section-why">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Почему Сатурит</span>
+      <h2>Надёжность,<br>проверенная годами</h2>
+      <p class="section-intro">18 лет опыта, более 2400 объектов, гарантия на все работы.</p>
+    </div>
+    <div class="features-grid reveal">
+      <div class="feature-card"><span class="feature-icon">💧</span><h3>Оплата после воды</h3><p>Платите только когда из скважины пошла чистая вода. Никакого риска для вас.</p></div>
+      <div class="feature-card"><span class="feature-icon">🛡</span><h3>Гарантия 5 лет</h3><p>Официальная гарантия на все виды работ. Договор с фиксированной стоимостью.</p></div>
+      <div class="feature-card"><span class="feature-icon">⚡</span><h3>Бурение за 1–2 дня</h3><p>УРБ 2А2 и УДВ 70 — быстрое бурение даже на сложных участках.</p></div>
+      <div class="feature-card"><span class="feature-icon">💰</span><h3>От 145 000 руб.</h3><p>Минимальная стоимость объекта. Цена фиксируется до начала работ.</p></div>
+      <div class="feature-card"><span class="feature-icon">🔬</span><h3>Анализ воды</h3><p>Химический анализ и подбор системы фильтрации под ваш состав.</p></div>
+      <div class="feature-card"><span class="feature-icon">🗺</span><h3>Весь регион</h3><p>Московская и Калужская области. Большой парк техники.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES CARDS -->
+<section class="section-services-preview">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Направления работ</span>
+      <h2>Всё для<br>вашей скважины</h2>
+    </div>
+    <div class="services-preview-grid reveal">
+      <a href="drilling.html" class="service-preview-card">
+        <div class="spcard-img" style="background-image:url(img/img_urb_zil.jpg); background-color:#1a2a3a;"></div>
+        <div class="spcard-body"><h3>Бурение скважин</h3><p>УРБ 2А2 и УДВ 70. Металл + пластик или пластик + пластик</p><span class="spcard-price">от 3 200 ₽/м</span></div>
+        <div class="spcard-arrow">→</div>
+      </a>
+      <a href="equipment.html" class="service-preview-card">
+        <div class="spcard-img" style="background-image:url(img/img_adapter.jpg); background-color:#1a2a3a;"></div>
+        <div class="spcard-body"><h3>Обустройство</h3><p>Летнее, адаптер, кессон. VIP с частотником и плавным пуском</p><span class="spcard-price">от 49 000 ₽</span></div>
+        <div class="spcard-arrow">→</div>
+      </a>
+      <a href="filtration.html" class="service-preview-card">
+        <div class="spcard-img" style="background-image:url(img/img_filtration.jpg); background-color:#0d1f35; background-size:contain; background-repeat:no-repeat; background-position:center;"></div>
+        <div class="spcard-body"><h3>Фильтрация воды</h3><p>Ионообменные системы. Удаление железа, марганца и жёсткости</p><span class="spcard-price">от 97 000 ₽</span></div>
+        <div class="spcard-arrow">→</div>
+      </a>
+      <a href="septic.html" class="service-preview-card">
+        <div class="spcard-img" style="background-image:url(img/img_septic.jpg); background-color:#0d1f35; background-size:contain; background-repeat:no-repeat; background-position:center;"></div>
+        <div class="spcard-body"><h3>Септик</h3><p>Евролос БИО 5+ с трубкой Вентури. Механическая аэрация — нечему ломаться</p><span class="spcard-price">от 156 000 ₽</span></div>
+        <div class="spcard-arrow">→</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section-process">
+  <div class="container">
+    <div class="reveal"><span class="section-label">Как мы работаем</span><h2>От звонка до чистой воды</h2></div>
+    <div class="process-steps reveal">
+      <div class="process-step"><div class="step-num">01</div><h3>Консультация</h3><p>Инженер перезвонит за 30 минут, рассчитает стоимость.</p></div>
+      <div class="process-step"><div class="step-num">02</div><h3>Выезд геолога</h3><p>Осмотр участка. Земляные работы — 3 000 руб./м³.</p></div>
+      <div class="process-step"><div class="step-num">03</div><h3>Бурение</h3><p>1–2 дня. Выбор обсадных колонн по геологии.</p></div>
+      <div class="process-step"><div class="step-num">04</div><h3>Прокачка и анализ</h3><p>Прокачиваем до чистой воды, берём пробы.</p></div>
+      <div class="process-step"><div class="step-num">05</div><h3>Обустройство</h3><p>Насос, кессон/адаптер, система очистки.</p></div>
+      <div class="process-step"><div class="step-num">06</div><h3>Оплата и гарантия</h3><p>Платите после воды. Договор. 5 лет гарантии.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Сату<span>рит</span></div>
+        <p>Бурение артезианских скважин под ключ в Московской и Калужской областях.</p>
+        <div class="footer-rating" style="margin-top:1rem;">
+          <iframe src="https://yandex.ru/sprav/widget/rating-badge/232381168783?type=rating&theme=white" width="150" height="50" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Услуги</h4>
+        <ul>
+          <li><a href="drilling.html">Бурение скважин</a></li>
+          <li><a href="equipment.html">Обустройство</a></li>
+          <li><a href="filtration.html">Фильтрация воды</a></li>
+          <li><a href="septic.html">Септик</a></li>
+          <li><a href="map.html">Карта глубин</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-contacts">
+        <h4>Контакты</h4>
+        <p><a href="tel:+79037258536">+7 (903) 725-85-36</a></p>
+        <p><a href="tel:+79160539197">+7 (916) 053-91-97</a></p>
+        <p><a href="https://skvazhina-pod-kluch.ru">skvazhina-pod-kluch.ru</a></p>
+        <p>Московская и Калужская обл.</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Сатурит. Все права защищены.</span></div>
+  </div>
+</footer>
+
+<div class="floating-cta">
+  <a href="https://yandex.com/maps/-/CPaY7Ami" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+    Яндекс карты
+  </a>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

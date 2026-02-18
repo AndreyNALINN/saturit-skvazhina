@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Карта глубин — Сатурит</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<nav id="mainNav" class="nav-solid"><a href="index.html" class="nav-logo">Сату<span>рит</span></a>
+  <ul class="nav-links"><li><a href="index.html">Главная</a></li><li><a href="drilling.html">Бурение</a></li><li><a href="equipment.html">Обустройство</a></li><li><a href="filtration.html">Фильтрация</a></li><li><a href="septic.html">Септик</a></li><li><a href="map.html" class="nav-map-link active-map">🗺 Карта глубин</a></li><li><a href="contact.html" class="nav-cta">Заказать</a></li></ul>
+  <div class="nav-burger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div></nav>
+<div id="mobileMenu" class="mobile-menu"><button class="mobile-close" onclick="closeMobileMenu()">✕</button><ul><li><a href="index.html" onclick="closeMobileMenu()">Главная</a></li><li><a href="drilling.html" onclick="closeMobileMenu()">Бурение</a></li><li><a href="equipment.html" onclick="closeMobileMenu()">Обустройство</a></li><li><a href="filtration.html" onclick="closeMobileMenu()">Фильтрация</a></li><li><a href="septic.html" onclick="closeMobileMenu()">Септик</a></li><li><a href="map.html" onclick="closeMobileMenu()" class="mobile-map-link">🗺 Карта глубин</a></li><li><a href="contact.html" onclick="closeMobileMenu()" class="mobile-cta">Заказать</a></li></ul></div>
+
+<div class="page-hero-small page-hero-map">
+  <div class="container">
+    <span class="section-label">Онлайн-калькулятор</span>
+    <h1>🗺 Карта глубин</h1>
+    <p>Найдите свой участок и получите автоматический расчёт стоимости бурения</p>
+  </div>
+</div>
+
+<section class="section-map-full">
+  <div class="container">
+    <div class="map-instructions reveal">
+      <div class="instruction-step"><div class="instr-num">1</div><p>Найдите свой участок на карте</p></div>
+      <div class="instruction-step"><div class="instr-num">2</div><p>Кликните — система определит глубину водоносного горизонта</p></div>
+      <div class="instruction-step"><div class="instr-num">3</div><p>Получите автоматическую смету на экране</p></div>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe id="wells-map" loading="lazy" data-src="https://saturit-map.ru/" width="100%" height="700" frameborder="0" allowtransparency="true" style="background-image:url(https://optim.tildacdn.com/tild6533-3339-4137-a138-653632646433/-/format/webp/thumbnail-saturit-ma.jpg);background-position:top;background-size:cover;background-repeat:no-repeat;"></iframe>
+    </div>
+    <div class="map-note reveal">
+      <p>💡 После получения расчёта — <a href="contact.html">оставьте заявку</a>, и наш инженер свяжется с вами в течение 30 минут.</p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container"><div class="footer-grid"><div class="footer-brand"><div class="footer-logo">Сату<span>рит</span></div><p>Бурение артезианских скважин под ключ.</p></div><div class="footer-nav"><h4>Услуги</h4><ul><li><a href="drilling.html">Бурение скважин</a></li><li><a href="equipment.html">Обустройство</a></li><li><a href="filtration.html">Фильтрация воды</a></li><li><a href="septic.html">Септик</a></li><li><a href="map.html">Карта глубин</a></li></ul></div><div class="footer-contacts"><h4>Контакты</h4><p><a href="tel:+79037258536">+7 (903) 725-85-36</a></p><p><a href="tel:+79160539197">+7 (916) 053-91-97</a></p></div></div><div class="footer-bottom"><span>© 2025 Сатурит.</span></div></div></footer>
+<div class="floating-cta"><a href="https://yandex.com/maps/-/CPaY7Ami" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Яндекс карты</a></div>
+<script src="main.js"></script>
+</body></html>
